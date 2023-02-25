@@ -23,6 +23,7 @@ body {
   color: bisque;
   background-color: #131111;
 }
+
 .footer {
   background-image: url("../Picture/footerbackground.jpg");
   backdrop-filter: blur(48px);
@@ -77,6 +78,7 @@ font-size: 20px;
   font-size:small;
   animation: antispinner 5s infinite;
 }
+
 @keyframes antispinner{
   to{
     transform:rotate(-90deg)
@@ -88,8 +90,105 @@ font-size: 20px;
   animation: spinner 5s infinite;
   padding: 0px;
 }
+.Space{
+  padding: 100px 0px 50px;
+  background-color: #131111;
+}
+.container2{
+  background-color: #131111; 
+  text-align: center; 
+
+}
+.icon2{
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+.container2 .title-box .title{
+  font-family: sans-serif;
+  color: bisque;
+  letter-spacing: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  
+}
+.title-name{
+  font-size: 20px;
+  font-family:sans-serif;
+  color: aliceblue;
+}
+.title-box .title-text{
+  margin:auto;
+  max-width: 420px;
+  color: white;
+}
+.menuDiv3{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+.menuDiv3 .left-img{
+  display: flex;
+  height: auto;
+  max-width: 100%;
+}
+
+
+.menuDiv3 .menuDiv3-Breakfast{
+  margin: 0px 0px 150px;
+  padding: 30px 0px;
+}
+.menuDiv3 .menuDiv3-Breakfast .Breakfast{
+  font-family: sans-serif;
+  color: white; 
+  text-decoration: none;
+}
+.menuDiv3 .menuDiv3-Breakfast .moreLink{
+  color: bisque;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 0px 0px 4px;
+}
+.menuDiv3 .menuDiv3-Appetizers{
+  margin: 0px 0px 25px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.menuDiv3 .menuDiv3-Appetizers .Appetizers{
+  font-family: sans-serif;
+  color: white; 
+  text-decoration: none;
+}
+.menuDiv3 .menuDiv3-Appetizers .moreLink{
+  color: bisque;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 0px 0px 4px;
+}
+.menuDiv3 .menuDiv3-Drinks{
+  margin: 0px 0px 150px;
+  padding: 30px 0px;
+}
+.menuDiv3 .menuDiv3-Drinks .Drinks{
+  font-family: sans-serif;
+  color: white; 
+  text-decoration: none;
+}
+.menuDiv3 .menuDiv3-Drinks .moreLink{
+  color: bisque;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 0px 0px 4px;
+}
 @keyframes spinner{
 to{
   transform: rotate(90deg);
 }
+
+
+
+
 }
