@@ -66,6 +66,7 @@ font-size: 20px;
 .link:hover{
   color:#131111;
   background-color: bisque;
+  transition: all 1s ease-out;
 }
 .book{
   display: flex;
@@ -73,10 +74,14 @@ font-size: 20px;
   color: #131111;
   flex-direction: column;
   align-items: center;
-  padding: 15px 25px;
+  padding: 5px 20px;
   margin: auto;
   font-size:small;
   animation: antispinner 5s infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 0;
 }
 
 @keyframes antispinner{
@@ -89,6 +94,9 @@ font-size: 20px;
   color:bisque;
   animation: spinner 5s infinite;
   padding: 0px;
+  position: relative;
+    left: 700px;
+    top: 50px;
 }
 .Space{
   padding: 100px 0px 50px;
