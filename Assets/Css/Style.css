@@ -40,6 +40,7 @@ span{
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: auto;
 }
 .subtitle {
 display: flex;
@@ -195,8 +196,18 @@ font-size: 20px;
 to{
   transform: rotate(90deg);
 }
+}
+.our-story{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title-text{
+  color:white;
+  font-size: 15px;
 
-
-
-
+}
+.book-number{
+  font-size: larger;
+  color: bisque;
 }
