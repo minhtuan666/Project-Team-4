@@ -41,6 +41,7 @@ span{
   align-items: center;
   flex-direction: column;
   width: auto;
+  padding: 0px 100px;
 }
 .subtitle {
 display: flex;
@@ -211,4 +212,12 @@ to{
 .book-number{
   font-size: larger;
   color: bisque;
+  padding: 0px 150px 0px 50px;
+}
+.title {
+  padding: 20px 100px
+}
+.title-name{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
 }
