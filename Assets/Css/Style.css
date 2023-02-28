@@ -205,7 +205,8 @@ to{
 .title-text{
   color:white;
   font-size: 15px;
-
+  padding: 15px;
+  margin: 10px 1200px 10px 0px;
 }
 .book-number{
   font-size: larger;
