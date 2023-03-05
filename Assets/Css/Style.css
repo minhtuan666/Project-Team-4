@@ -8,16 +8,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../Picture/Backgrounddiv1.jpg);
 }
-.header .header_top .container_header .left ul{
+.header .header_top{
+  background: none;
+  border-bottom: 1px solid hsla(0,0%,100%,.2);
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+}
+.header .header_top .container_top{
+  max-width: 1780px;
+  padding: 0 20px;
+}
+.header .header_top .container_top .left ul{
   padding: 0;
   margin: 0;
 }  
-.header .header_top .container_header .left {
+.header .header_top .container_top .left {
   float: left;
   line-height: 30px;
   position: relative;
   }
-.header .header_top .container_header .left li{
+.header .header_top .container_top .left li{
   position: relative;
   float: left;
   margin-right: 70px;
@@ -28,25 +40,25 @@ body {
   padding: 0;
   margin: 0;
 }
-.header .header_top .container_header .left .icon_map::before{
+.header .header_top .container_top .left .icon_map::before{
   content: "\f3c5";
 }
-.header .header_top .container_header .left .icon_clock::before{
+.header .header_top .container_top .left .icon_clock::before{
   content: "\f3c5";
 }
-.header .header_top .container_header .left::after{
+.header .header_top .container_top .left::after{
   content: "\f3c5"; <!-- Them icon lap phuong-->
 }
-.header .header_top .container_header .right {
+.header .header_top .container_top .right {
   float: right;
   line-height: 30px;
   position: relative;
   }
-  .header .header_top .container_header .right ul{
+  .header .header_top .container_top .right ul{
     padding: 0;
     margin: 0;
   }  
-.header .header_top .container_header .right li{
+.header .header_top .container_top .right li{
   position: relative;
   float: left;
   margin-right: 70px;
@@ -57,23 +69,23 @@ body {
   padding: 0;
   margin: 0;
 }
-.header .header_top .container_header .right .icon_telephone::before{
+.header .header_top .container_top .right .icon_telephone::before{
   content: ;
 }
-.header .header_top .container_header .right .icon_mail::before{
+.header .header_top .container_top .right .icon_mail::before{
   content: ;
 }
-.header .header_top .container_header .right::after{
+.header .header_top .container_top .right::after{
   content: ;
 }
 .header .header_bottom {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+  background: none;
+  border-bottom: 1px solid transparent;
+  left: 0;
+  padding: 0; 
   position: relative;
-  background-color: #202020;
-  padding: 0;
-  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
 }
 .header .find-a-table{
   font-size: 12px;
