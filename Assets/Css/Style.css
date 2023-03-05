@@ -1,15 +1,79 @@
 /*https://mediacity.co.in/delici/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg*/
+*{
+  font-size: 100%;
+  box-sizing: border-box;
+  color: #e4c590;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../Picture/Backgrounddiv1.jpg);
 }
-.header {
+.header .header_top .container_header .left ul{
+  padding: 0;
+  margin: 0;
+}  
+.header .header_top .container_header .left {
+  float: left;
+  line-height: 30px;
+  position: relative;
+  }
+.header .header_top .container_header .left li{
+  position: relative;
+  float: left;
+  margin-right: 70px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+.header .header_top .container_header .left .icon_map::before{
+  content: "\f3c5";
+}
+.header .header_top .container_header .left .icon_clock::before{
+  content: "\f3c5";
+}
+.header .header_top .container_header .left::after{
+  content: "\f3c5"; <!-- Them icon lap phuong-->
+}
+.header .header_top .container_header .right {
+  float: right;
+  line-height: 30px;
+  position: relative;
+  }
+  .header .header_top .container_header .right ul{
+    padding: 0;
+    margin: 0;
+  }  
+.header .header_top .container_header .right li{
+  position: relative;
+  float: left;
+  margin-right: 70px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+.header .header_top .container_header .right .icon_telephone::before{
+  content: ;
+}
+.header .header_top .container_header .right .icon_mail::before{
+  content: ;
+}
+.header .header_top .container_header .right::after{
+  content: ;
+}
+.header .header_bottom {
   align-items: center;
   display: flex;
-  justify-content: space-around;
-  position: static;
-  background-color: #131111;
- 
+  justify-content: space-between;
+  position: relative;
+  background-color: #202020;
+  padding: 0;
+  flex-wrap: wrap;
 }
 .header .find-a-table{
   font-size: 12px;
@@ -220,4 +284,7 @@ to{
 .title-name{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
+}
+.container3{
+  background-color: #171819;
 }
