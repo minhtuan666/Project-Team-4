@@ -1,0 +1,53 @@
+body{
+    background-image: url(../Picture/ImageAboutus/banner-image-1.6ae18acdd16dc62fbafb.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e4c590;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.form-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.find-a-table{
+    border: solid 2px #e4c590;
+    margin: 10px;
+    padding: 15px 25px 15px 25px;
+}
+.find-a-table:hover{
+    background-color: #e4c590;
+    color:black;
+    transition: all 1s ease;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+span{
+    font-weight: 700;
+    letter-spacing: .4em;
+}
+.subtitle{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 70px;
+    text-transform:initial;
+}
+.subtext{
+    border:solid 0px;
+    background-color: #171819;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.space{
+    width:100%;
+    height: 50px;
+    background-color: #171819;
+}
