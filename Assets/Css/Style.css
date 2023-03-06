@@ -3,12 +3,26 @@
   font-size: 100%;
   box-sizing: border-box;
   color: #e4c590;
+  border: none;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../Picture/Backgrounddiv1.jpg);
 }
-.header .header_top{
+.header{
+  background: none;
+  left: 0;
+  min-height: 0;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header_top{
   background: none;
   border-bottom: 1px solid hsla(0,0%,100%,.2);
   color: white;
@@ -16,9 +30,10 @@ body {
   padding-top: 10px;
   position: relative;
 }
-.header .header_top .container_top{
+.container_top{
   max-width: 1780px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 .header .header_top .container_top .left ul{
   padding: 0;
@@ -46,7 +61,7 @@ body {
 .header .header_top .container_top .left .icon_clock::before{
   content: "\f3c5";
 }
-.header .header_top .container_top .left::after{
+.header .header_top .container_top .left .icon_map::after{
   content: "\f3c5"; <!-- Them icon lap phuong-->
 }
 .header .header_top .container_top .right {
@@ -75,10 +90,10 @@ body {
 .header .header_top .container_top .right .icon_mail::before{
   content: ;
 }
-.header .header_top .container_top .right::after{
+.header .header_top .container_top .right .icon_telephone::after{
   content: ;
 }
-.header .header_bottom {
+.header_bottom {
   background: none;
   border-bottom: 1px solid transparent;
   left: 0;
@@ -87,17 +102,133 @@ body {
   top: 0;
   width: 100%;
 }
-.header .find-a-table{
-  font-size: 12px;
-  font-family: sans-serif;
-  padding: 11px 45px;
-  color: black;
-  background-color:bisque;
+.bottom_container{
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.find-a-table:hover
-{
-  color: bisque;
-  background-color: #131111;
+
+.nav-menu{
+  display: block;
+  float: left;
+  left: 0;
+  padding: 0;
+  top: 0;
+  position: relative;
+}
+.hidden_menu{
+  background: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  outline: none;
+  position: relative;
+  width: 30px;
+}
+.hamburger{
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  height: 24px;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 30px;
+}
+.hamburger span{
+  background: #fff;
+  height: 2px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+  width: 83.3333%;
+}
+.bottom_bun{
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+  width: 58.3333%;
+}
+.meat{
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+  width: 100%;
+}
+.logo_box{
+  display: block;
+  margin-left: 140px;
+  padding: 40px 0;
+  position: relative;
+
+}
+.logo_box .logo img{
+  height: 50px;
+  max-width: 100%;
+}
+.find-a-table{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color:;
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding:11px 45px;
+  font-size: 12px;
+  background: #e4c590;
+  border: 2px solid #e4c590;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+.find-a-table ::before{
+  background:;
+  border-radius: 50%;
+  content: "";
+  height: 200%;
+  left: 50%;
+  position: absolute;
+  top: -200%;
+  transform: translateX(-50%);
+  transition-duration: 0.8s;
+  width: 200%;
+  z-index: 1;
+}
+.button_wrap{
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.text-one{
+  color: black;
+  display: block;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}
+.text_two{
+  color: white;
+  display: block;
+  position: absolute;
+  top: 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
 }
 
 .footer {
@@ -209,61 +340,61 @@ font-size: 20px;
   max-width: 420px;
   color: white;
 }
-.menuDiv3{
+.menuDiv2{
   display:flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
   text-align: center;
 }
-.menuDiv3 .left-img{
+.menuDiv2 .left-img{
   display: flex;
   height: auto;
   max-width: 100%;
 }
 
 
-.menuDiv3 .menuDiv3-Breakfast{
+.menuDiv2 .menuDiv2-Breakfast{
   margin: 0px 0px 150px;
   padding: 30px 0px;
 }
-.menuDiv3 .menuDiv3-Breakfast .Breakfast{
+.menuDiv2 .menuDiv2-Breakfast .Breakfast{
   font-family: sans-serif;
   color: white; 
   text-decoration: none;
 }
-.menuDiv3 .menuDiv3-Breakfast .moreLink{
+.menuDiv2 .menuDiv2-Breakfast .moreLink{
   color: bisque;
   font-family: sans-serif;
   text-decoration: none;
   padding: 0px 0px 4px;
 }
-.menuDiv3 .menuDiv3-Appetizers{
+.menuDiv2 .menuDiv2-Appetizers{
   margin: 0px 0px 25px;
   padding-left: 150px;
   padding-right: 150px;
 }
-.menuDiv3 .menuDiv3-Appetizers .Appetizers{
+.menuDiv2 .menuDiv2-Appetizers .Appetizers{
   font-family: sans-serif;
   color: white; 
   text-decoration: none;
 }
-.menuDiv3 .menuDiv3-Appetizers .moreLink{
+.menuDiv2 .menuDiv2-Appetizers .moreLink{
   color: bisque;
   font-family: sans-serif;
   text-decoration: none;
   padding: 0px 0px 4px;
 }
-.menuDiv3 .menuDiv3-Drinks{
+.menuDiv2 .menuDiv2-Drinks{
   margin: 0px 0px 150px;
   padding: 30px 0px;
 }
-.menuDiv3 .menuDiv3-Drinks .Drinks{
+.menuDiv2 .menuDiv2-Drinks .Drinks{
   font-family: sans-serif;
   color: white; 
   text-decoration: none;
 }
-.menuDiv3 .menuDiv3-Drinks .moreLink{
+.menuDiv2 .menuDiv2-Drinks .moreLink{
   color: bisque;
   font-family: sans-serif;
   text-decoration: none;
