@@ -118,23 +118,60 @@ margin-right: 70px;
   height: 2px;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
-  transition-delay: 0s;
   transition-property: all;
   width: 83.3333%;
+}
+.hamburger:hover span{
+  width: 100%;
+}
+.top_bun{
+  animation-name: burger-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 .bottom_bun{
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
-  transition-delay: 0s;
   transition-property: all;
   width: 58.3333%;
+  animation-name: burger-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 .meat{
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  transition-delay: 0s;
   transition-property: all;
   width: 100%;
+  animation-name: burger-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+@keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .logo_box{
   display: flex;
