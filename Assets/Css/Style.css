@@ -4,10 +4,12 @@
   box-sizing: border-box;
   color: #e4c590;
   border: none;
-  line-height: inherit;
   margin: 0;
   outline: none;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 .header{
   background: none;
@@ -17,6 +19,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 .header_top{
   background: none;
@@ -249,7 +252,7 @@ body {
   background-position: 50%;
   background-size: cover;
   width: 100%;
-  height: 890px;
+  height: 800px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -263,14 +266,15 @@ body {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .4em;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
 }
-symbol{
+.symbol{
+margin: 0 auto;
 margin-bottom: 30px;
 width: 100px;
 padding-top: 13px;
 }
-.heading{
+.heading h1{
   font-weight: 400;
   line-height: 1em;
   font-size: 80px;
@@ -278,11 +282,13 @@ padding-top: 13px;
 }
 .heading h1{
   color: white;
+
 }
 .text{
   color: white;
   font-size: 20px;
   margin-top: 20px;
+  line-height: 1.6em;
 }
 .view_our_menu{
   padding-top: 40px;
@@ -395,39 +401,76 @@ padding-top: 13px;
 
 
 
-.Space{
-  padding: 100px 0px 50px;
-  background-color: #131111;
-}
 .container2{
   background-color: #131111; 
   text-align: center; 
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+}
 
+.container2_left{
+position: absolute;
+left: 0;
+bottom: 0;
+animation-name: float_up_down;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
 }
-.icon2{
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
+
+.container2_right{
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation-name: float_up_down;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-.container2 .title-box .title{
-  font-family: sans-serif;
-  color: bisque;
-  letter-spacing: 5px;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  
+
+@keyframes float_up_down {
+  0% {
+    transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
-.title-name{
-  font-size: 20px;
-  font-family:sans-serif;
-  color: aliceblue;
+
+.container2_top{
+  margin: 0 auto;
+  margin-bottom: -90px;
+  text-align: center;
 }
-.title-box .title-text{
-  margin:auto;
+
+.container2_top .text{
+  margin: 0 auto;
   max-width: 420px;
-  color: white;
+  line-height: 1.8em;
+  padding-top: 15px;
+  font-size: 100%;
 }
+
+.container2_top .heading h2{
+  color: white;
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+
+
 .menuDiv2{
   display:flex;
   align-items: center;
@@ -435,64 +478,147 @@ padding-top: 13px;
   padding: 30px;
   text-align: center;
 }
-.menuDiv2 .left-img{
-  display: flex;
-  height: auto;
-  max-width: 100%;
-}
 
 
 .menuDiv2 .menuDiv2-Breakfast{
   margin: 0px 0px 150px;
   padding: 30px 0px;
 }
-.menuDiv2 .menuDiv2-Breakfast .Breakfast{
-  font-family: sans-serif;
-  color: white; 
-  text-decoration: none;
-}
-.menuDiv2 .menuDiv2-Breakfast .moreLink{
-  color: bisque;
-  font-family: sans-serif;
-  text-decoration: none;
-  padding: 0px 0px 4px;
-}
+
 .menuDiv2 .menuDiv2-Appetizers{
-  margin: 0px 0px 25px;
-  padding-left: 150px;
-  padding-right: 150px;
+  margin-top: 160px;
 }
-.menuDiv2 .menuDiv2-Appetizers .Appetizers{
-  font-family: sans-serif;
-  color: white; 
-  text-decoration: none;
-}
-.menuDiv2 .menuDiv2-Appetizers .moreLink{
-  color: bisque;
-  font-family: sans-serif;
-  text-decoration: none;
-  padding: 0px 0px 4px;
-}
+
 .menuDiv2 .menuDiv2-Drinks{
   margin: 0px 0px 150px;
   padding: 30px 0px;
 }
-.menuDiv2 .menuDiv2-Drinks .Drinks{
-  font-family: sans-serif;
-  color: white; 
-  text-decoration: none;
+
+.image_div2_drink{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
-.menuDiv2 .menuDiv2-Drinks .moreLink{
-  color: bisque;
-  font-family: sans-serif;
-  text-decoration: none;
-  padding: 0px 0px 4px;
+
+.image_div2{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
 }
-@keyframes spinner{
-to{
-  transform: rotate(90deg);
+
+.image_div2::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  top: 0;
+  bottom: 0;
+  background: url("../Picture/imgDiv2/pattern8.png") center repeat;
+  background-size: cover;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
+
+.image_div2_drink:hover .image_div2::before{
+  transform: rotateY(180deg);
+  transition-delay: 0.3s;
 }
+
+.image_div2::after{
+  position: absolute;
+  top: 0;
+  left: -85%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  transform: skewX(-25deg);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.4));
+}
+
+.image_div2_drink:hover .image_div2::after{
+  animation: shine 1s;
+}
+
+@keyframes shine{
+  100%{
+    left: 125%;
+  }
+}
+
+.image_div2 img{
+  position: relative;
+  display: block;
+  width: 100%;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.image_div2_drink:hover .image_div2 img{
+  transform: scale(1.04);
+}
+
+.menuDiv2 h3 a{
+  color: white;
+}
+
+.menuDiv2 h3{
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 1.2em;
+} 
+
+.viewmenu{
+  position: relative;
+}
+.viewmenu a{
+  display: inline-block;
+  vertical-align: top;
+  font-size: px;
+  color: #e4c590;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  padding-bottom:4px;
+}
+.viewmenu a::before{
+  position: absolute;
+  content: '';
+  left: 5px;
+  right: 5px;
+  bottom: -4px;
+  height: 4px;
+  opacity: 0;
+  transform: scaleX(.2);
+  border-bottom: 1px solid #e4c590;
+  border-top: 1px solid #e4c590;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.viewmenu a:hover::before{
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+.viewmenu a:hover{
+  color: white;
+  border-color: white;
+}
+
+
+
 .our-story{
   display: flex;
   flex-direction: column;
@@ -516,6 +642,13 @@ to{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
 }
+
+
+
+
+
+
+
 
 .container3{
   background-color: #171819;
