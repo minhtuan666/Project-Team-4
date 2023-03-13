@@ -1,53 +1,175 @@
-body{
-    background-image: url(../Picture/ImageAboutus/banner-image-1.6ae18acdd16dc62fbafb.jpg);
-    font-family: Arial, Helvetica, sans-serif;
-    color: #e4c590;
+.header-box{
+    position: fixed;
+    width: 100%;
+    top:0px;
+    z-index: 999;
+}
+.top-header{
+    background-color: #262626;
     max-width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-.form-header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 15px;
 }
-.find-a-table{
-    border: solid 2px #e4c590;
-    margin: 10px;
-    padding: 15px 25px 15px 25px;
+.link{
+    border: none;
+    box-shadow: 0 2px 0 #6f9a37;
+    background-color: #82b440;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
 }
-.find-a-table:hover{
-    background-color: #e4c590;
-    color:black;
-    transition: all 1s ease;
-}
-.text{
+.topnext{
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    color:white;
+    background:none;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    padding:15px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
 }
 span{
-    font-weight: 700;
-    letter-spacing: .4em;
+    padding:15px;
 }
-.subtitle{
-    font-family: 'Times New Roman', Times, serif;
+.boxbottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.find-a-table{
+    background-color: #e4c590;
+    padding: 10px 50px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 10px;
+    transition: all .3s ease 0s;
+    vertical-align: top;
+    border: solid 3px #e4c590;
+}
+.find-a-table:hover{
+    background-color: black;
     color:white;
-    font-size: 70px;
-    text-transform:initial;
+}
+.top{
+    animation-name:return;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;  
+}
+.middle{
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: return;
+}
+.bottom{
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: return;
+}
+@keyframes return {
+0% {
+    width: 100%;
+}
+50%{
+    width: 50%;
+}
+100%{
+    width: 100%;
+}
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 30px;
+
+}
+.list span{
+    background: #fff;
+    height: 2px;
+    width: 83.33333333%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    padding: 0px;
+}
+.list:hover span{
+    width: 100%;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    background-image: url(../Picture/ImageAboutus/banner-image-1.6ae18acdd16dc62fbafb.jpg);
+    max-width: 100%;
+    padding: 300px;
+    background-position: 50%;
 }
 .subtext{
-    border:solid 0px;
-    background-color: #171819;
+    letter-spacing: .4em;
+    color: #e4c590;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subtitle{
+    font-size: 70px;
+    color: #fff;
+}
+.container2{
+    background-color: black;
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 120px 0px;
 }
-.space{
-    width:100%;
-    height: 50px;
-    background-color: #171819;
+.text{
+    color:#fff;
+    margin:0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 40px;
+    margin: 100px 0px;
+}
+.text span{
+    color: #e4c590;
+}
+.boxcontainer{
+    display: flex;
+    margin: 100px 0px;
+    flex-direction: row;
+    align-items: center;
+}
+.box1 .text{
+    font-size: 30px;
+    width: 80%;
+    text-align: left;
+}
+.box3{
+    padding: 0px 100px;
+    margin: auto;
 }
