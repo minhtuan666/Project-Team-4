@@ -1,4 +1,5 @@
-/*https://mediacity.co.in/delici/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg*/
+
+
 *{
   font-size: 100%;
   box-sizing: border-box;
@@ -79,12 +80,14 @@ margin-right: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .side_bar_menu{
   margin-left: 90px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-left: 80px;
 }
 .nav_menu{
   display: block;
@@ -246,6 +249,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
+
 .container1{
   background-image: url("../Picture/ImageDiv1/Backgrounddiv1.jpg");
   background-repeat: no-repeat;
@@ -401,8 +408,9 @@ padding-top: 13px;
 
 
 
+
 .container2{
-  background-color: #131111; 
+  background-color: #0e0d0c; 
   text-align: center; 
   padding-top: 100px;
   padding-bottom: 50px;
@@ -586,7 +594,7 @@ animation-timing-function: linear;
   vertical-align: top;
   font-size: px;
   color: #e4c590;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.2em;
   line-height: 1.5em;
   padding-bottom:4px;
@@ -619,29 +627,7 @@ animation-timing-function: linear;
 
 
 
-.our-story{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.title-text{
-  color:white;
-  font-size: 15px;
-  padding: 15px;
-  margin: 10px 1200px 10px 0px;
-}
-.book-number{
-  font-size: larger;
-  color: bisque;
-  padding: 0px 150px 0px 50px;
-}
-.title {
-  padding: 20px 100px
-}
-.title-name{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-}
+
 
 
 
@@ -656,68 +642,94 @@ animation-timing-function: linear;
   padding-top: 170px;
   position: relative;
 }
-.leaf-onion{
+.leaf_onion{
   left: 0;
   margin-top: -95px;
   position: absolute;
   top: 50%;
 }
-.our-story{
-  padding-right: 90px;
+.container3_inner{
+  position:static;
+  max-width:1200px;
+  padding:0px 15px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.container3_left{
+  text-align:center;
   margin-bottom: 40px;
-  text-align: center;
+  padding-right: 105px;
+  padding-left: 15px; 
 }
-.title_box{
-  margin-bottom: 30px;
-}
-.titlediv3{
-  color: #e4c590;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .4em;
-  line-height: 1em;
-  margin-bottom: 10px;
-  position: relative;
-}
-.imagediv3{
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-.title-text{
+
+.container3_left .text{
   margin: 0 auto;
   max-width: 420px;
-  line-height: 1.85em;
+  line-height: 1.8em;
   padding-top: 15px;
-  position: relative;
+  font-size: 100%;
+  margin-bottom: 30px;
 }
-.book-number a{
-  color: #e4c590;
-  padding-bottom: 5px;
+
+.container3_left .heading h2{
+  color: white;
+  font-size: 60px;
+  line-height: 1.2em;
 }
-.book-number{
-  color: #e4c590;
+
+.book_through_call{
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.book_number{
   font-size: 24px;
   line-height: 1em;
   margin-bottom: 30px;
-  position: relative;
 }
-.book-through-call{
-  font-weight: 700;
-  margin-bottom: 5px;
-  position: relative;
-  text-transform: capitalize;
-}
-.booking_info{
-  position: relative;
-  text-align: center;
-}
-.pictuve-div-3{
+
+.container3_right{
   position: relative;
   margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+.twopicture{
+  padding-left: 90px;
+  position: relative;
+}
+
+.pic1{
+  z-index: 1;
+  position: relative;
+}
+
 .pic2{
-  
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  padding: 50px 0;
+  top: auto;
+  width: 285px;
+  z-index: 2;
 }
+.twopicture .pic2::before{
+  background: url('../Picture/imgDiv2/pattern8.png') center repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  top: 0;
+  bottom: 0;
+  content: '';
+  z-index: ;
+}
+
 @keyframes rotateme {
     
   0% {
@@ -752,11 +764,6 @@ animation-timing-function: linear;
   top: -65px;
   z-index: 3;
 }
-.twopicture{
-
-}
-
-
 
 
 
