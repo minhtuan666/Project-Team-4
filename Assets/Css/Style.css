@@ -267,10 +267,6 @@ margin-right: 70px;
 
 
 
-
-
-
-
 .menu_backdrop{
   position: fixed;
   display: block;
@@ -452,12 +448,23 @@ margin-right: 70px;
 }
 
 
-
-
 .hidden_inner .booking_info{
   padding: 0 20px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -619,6 +626,11 @@ padding-top: 13px;
   letter-spacing: .15em;
   line-height: 1.5em;
 }
+
+
+
+
+
 
 
 
@@ -821,6 +833,7 @@ animation-timing-function: linear;
   letter-spacing: 0.2em;
   line-height: 1.5em;
   padding-bottom:4px;
+  position: relative;
 }
 .viewmenu a::before{
   position: absolute;
@@ -847,6 +860,11 @@ animation-timing-function: linear;
   color: white;
   border-color: white;
 }
+
+
+
+
+
 
 
 
@@ -989,6 +1007,17 @@ animation-timing-function: linear;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .container4{
   background-color: #0e0d0c;
   position: relative;
@@ -1070,6 +1099,9 @@ animation-timing-function: linear;
   color: #e4c590;
   font-size: 24px;
 }
+
+
+
 
 
 
@@ -1438,8 +1470,6 @@ animation-timing-function: linear;
 }
 
 
-
-
 .container7_inner{
   background-color: #0e0d0c;
   position: relative;
@@ -1480,6 +1510,23 @@ animation-timing-function: linear;
   position: relative;
   
 }
+
+.form_1{
+  display: flex;
+}
+
+.form_1 .form_group7{
+  width: 50%;
+}
+
+.form_2{
+  display: flex;
+}
+
+.form_2 .form_group7{
+  width: 33.3%;
+}
+
 
 
 .form_group7 input[type="text"],
@@ -1562,6 +1609,200 @@ input{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container8{
+  padding: 100px 0px 60px;
+  background-color: #171819;
+  position: relative;
+}
+
+
+.container8_inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container8_left{
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
+
+.container8_right{
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+.container8_top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.container8_top h2{
+  color: white;
+  font-size: 60px;
+  line-height: 1.2em; 
+  width: 450px;
+}
+
+.container8_bottom{
+  display: flex;
+
+}
+
+.container8_box1{
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 40px 40px;
+  background: #151616;
+}
+
+.container8_box2{
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 40px 40px;
+  background: #121111;
+}
+
+.container8_icon{
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+.container8_box1:hover .container8_icon,
+.container8_box2:hover .container8_icon{
+  transform: scale(-1) rotate(180deg);
+}
+
+.container8_box1 h4, .container8_box2 h4{
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 1.2em;
+  font-weight: 500;
+  font-family: 'Forum', cursive;
+}
+
+.container8_box1 .text, .container8_box2 .text{
+  color: #a7a7a7;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-family: 'DM sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container9{
+  background-color: #171819;
+  padding: 100px 0px 60px;
+  position: relative;
+}
+
+.container9_inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container9_left{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.container9_right{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container9_top{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container9_top h2{
+  font-size: 60px;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.container9_bottom{
+display: flex;
+justify-content: center;
+}
+
+
+
+.container9_img{
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.container9_chef{
+  margin-bottom: 40px;
+  padding: 0 25px;
+}
+
+.container9_chef h3{
+  font-size: 35px;
+  font-family: 'Forum', cursive;
+  line-height: 1.2em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.container9_chef h3:hover{
+  color: #e4c590;
+
+}
+
+.container9_chef span{
+  color: #e4c590;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: 'DM sans', sans-serif;
+}
+
+.container9_chef .text{
+  color: #a7a7a7;
+  font-size: 14px;
+  position: relative;
+  line-height: 1.6em;
+  font-family: 'DM sans', sans-serif;
+}
 
 
 
