@@ -1,0 +1,102 @@
+.container1{
+    background: black;
+    padding: 300px 0 150px;
+    position: relative;
+}
+
+.container5_inner{
+    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.container5_inner .text{
+    color: #a7a7a7;
+    margin-bottom: 15px;
+    padding: 0 200px;
+}
+
+.container5_inner .bookingrequest{
+    text-align: center;
+    font-family: 'DM sans', sans-serif;
+}
+
+.container5_inner .bookingrequest a{
+    color: #e4c590;
+}
+
+#form3{
+    margin-top: 40px ;
+}
+
+.container_map{
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+
+.container7_left{
+    background-color: #171819;
+    padding: 0 90px 0 0 ;
+}
+
+.container7_right{
+    background-color: #0e0d0c;
+    text-align: center;
+    position: relative;
+    padding: 0;
+}
+
+.map_border{
+    position: relative;
+    padding: 75px 20px 55px;
+    margin: 0 15px; 
+    min-height: 100%;
+    border: 1px solid #e4c590;
+}
+
+.map_border::before{
+    border: 1px solid #e4c590;
+    bottom: 12px;
+    content: "";
+    left: -14px;
+    position: absolute;
+    right: -14px;
+    top: 12px;
+}
+
+
+.location{
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+    justify-content: center;
+}
+
+.container8_box1,
+.container8_box2{
+    max-width: 25%;
+    background: #171819;
+}
+
+.container8_box1 .text,
+.container8_box2 .text{
+    margin: 0;
+    padding: 0;
+}
+
+.container8_box1 .viewmenu,
+.container8_box2 .viewmenu{
+    margin-top: 30px;
+}
+
+
+.container8_box1 .viewmenu a,
+.container8_box2 .viewmenu a{    
+    font-family: 'DM sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    font-size: 12px;
+}

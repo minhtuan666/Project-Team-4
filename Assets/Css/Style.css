@@ -38,6 +38,13 @@ h1, h2, h3, h4, h5{
   top: 0;
   width: 100%;
   z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.header.sticky{
+  top: -51px;
+  background: #202020;
+  transition: all 0.3s ease;
 }
 .header_top{
   background: none;
@@ -191,7 +198,7 @@ margin-right: 70px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 20px 0;
   margin-left: 140px;
 }
 .logo_box .logo img{
@@ -2058,6 +2065,11 @@ justify-content: center;
   text-transform: uppercase;
   font-family: 'DM sans', sans-serif;
 }
+
+
+
+
+
 
 
 
