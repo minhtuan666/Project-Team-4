@@ -3,6 +3,9 @@ body{
     background-color: #000000;
     position: absolute;
 }
+a{
+    text-decoration: none;
+}
 .header-box{
     position: fixed;
     width: 100%;
