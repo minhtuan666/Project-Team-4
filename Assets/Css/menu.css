@@ -1,0 +1,1463 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.header-first {
+  position: relative;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.left {
+  padding-left: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+.right {
+  padding-right: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+.header-second {
+  display: flex;
+  flex-direction: column-reverse;
+  background: none;
+  z-index: 3;
+}
+.side-bar-menu {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  z-index: 1;
+}
+.nav-menu {
+  display: block;
+  float: left;
+  left: 0;
+  padding: 0;
+  top: 0;
+  position: relative;
+}
+.hidden_menu {
+  background: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  outline: none;
+  position: relative;
+  width: 30px;
+}
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  height: 24px;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 30px;
+}
+.hamburger span {
+  background: #fff;
+  height: 2px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  width: 83.3333%;
+}
+.hamburger:hover span {
+  width: 100%;
+}
+.top_bun {
+  animation-name: burger-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.bottom_bun {
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  width: 58.3333%;
+  animation-name: burger-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.meat {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  width: 100%;
+  animation-name: burger-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+@keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.btn-findatable {
+  display: flex;
+}
+
+.btn-findatable .find-a-table {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #e4c590;
+  color: black;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #e4c590;
+  font-size: 13px;
+  font-weight: 550;
+}
+.find-a-table:hover {
+  background-color: black;
+  color: white;
+}
+.main_box {
+  position: relative;
+  display: flex;
+  text-align: center;
+  vertical-align: top;
+  justify-content: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding: 21px 45px;
+  font-size: 12px;
+  background: #e4c590;
+  border: 2px solid #e4c590;
+  border-radius: 0px;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}
+.main_box:hover::before {
+  top: 0%;
+}
+.main_box::before {
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  top: -200%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 1;
+  background: black;
+}
+.button_wrap {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.text-one {
+  color: white;
+  display: block;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: all;
+}
+.text-one :first-child {
+  transform: translateY(-150%);
+}
+.text_two {
+  color: white;
+  display: block;
+  position: absolute;
+  top: 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: all;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.background-header {
+  background: url(./imgMenu/banner-image-2.70c1e16e0a2f5438eb99.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* filter: brightness(50%); */
+}
+
+.name-box {
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  z-index: 8;
+}
+.subtitle {
+  color: #e4c590;
+  letter-spacing: 0.4em;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+.name-page h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: sans-serif, cursive;
+}
+.container-1 {
+  background-color: #171819;
+  position: relative;
+  top: 370px;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-family: forum, cursive;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+}
+.menu-box {
+  padding: 0px 15px;
+  width: 1160px;
+  height: 625px;
+}
+.subtitle-box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 45px;
+  height: 120px;
+}
+.subtitle2 {
+  color: #e4c590;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  padding: 0px 0px 10px;
+}
+.icon2 {
+  padding: 0px 0px 15px;
+}
+.name-div2 h2 {
+  position: relative;
+  color: white;
+  font-family: forum, cursive;
+  font-size: 44px;
+  font-weight: 100;
+  margin-bottom: 0;
+  top: -35px;
+}
+.menu-appetizers-1 {
+  display: flex;
+  height: 460px;
+  width: 1189px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.img-menu1 {
+  position: relative;
+  display: flex;
+  width: 664px;
+  height: 420px;
+  margin: 0px 0px 40px;
+  padding: 0px 15px;
+}
+.decor-menu-1 .decor {
+  width: 15px;
+  margin: 0;
+  height: 396px;
+  padding: 0px 15px 0px 15px;
+}
+
+.menu-appetizers-1 .img-appetizers .img-menu {
+  position: absolute;
+  width: 600px;
+  top: 1%;
+  left: 65px;
+}
+.menu-appetizers-1 .list-menu {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 43%;
+  height: 86%;
+}
+.menu {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0px 15px;
+  bottom: 8%;
+}
+
+.dish1 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish1-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish1-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription1 a {
+  text-decoration: none;
+  color: white;
+}
+.dish2 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish2-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish2-name h1 a span {
+  background: #e4c590;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+  padding: 0 5px;
+  position: relative;
+}
+.dish2-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.dish3 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish3-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish3-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.dish4 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish4-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish4-name h1 a span {
+  background: #e4c590;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+  padding: 0 5px;
+  position: relative;
+}
+
+.dish4-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-2 {
+  background-color: #171819;
+  position: relative;
+  top: 370px;
+  padding-bottom: 60px;
+  font-family: forum, cursive;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+}
+.menu-box {
+  padding: 0px 15px;
+  width: 1160px;
+  height: 625px;
+}
+.subtitle-box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 45px;
+  height: 120px;
+}
+.subtitle2 {
+  color: #e4c590;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  padding: 0px 0px 10px;
+}
+.icon2 {
+  padding: 0px 0px 15px;
+}
+.name-div2 h2 {
+  position: relative;
+  color: white;
+  font-family: forum, cursive;
+  font-size: 44px;
+  font-weight: 100;
+  margin-bottom: 0;
+  top: -35px;
+}
+.menu-appetizers {
+  display: flex;
+  height: 460px;
+  width: 1189px;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-direction: row-reverse;
+}
+.img-menu2 {
+  position: relative;
+  display: flex;
+  width: 664px;
+  height: 420px;
+  margin: 0px 0px 40px;
+  padding: 0px 15px;
+  flex-direction: row-reverse;
+}
+.decor-menu .decor {
+  width: 15px;
+  margin: 0;
+  height: 396px;
+  padding: 0px 15px 0px 0px;
+}
+
+.menu-appetizers .img-appetizers .img-menu {
+  position: absolute;
+  width: 600px;
+  top: 1%;
+  left: 1px;
+}
+.menu-appetizers .list-menu {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 43%;
+  height: 86%;
+}
+.menu {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0px 15px;
+  bottom: 8%;
+}
+
+.dish1 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish1-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish1-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription1 a {
+  text-decoration: none;
+  color: white;
+}
+.dish2 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish2-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish2-name h1 a span {
+  background: #e4c590;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+  padding: 0 5px;
+  position: relative;
+}
+.dish2-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.dish3 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish3-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish3-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.dish4 {
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+}
+
+.dish4-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: forum, cursive;
+  font-size: 21px;
+}
+.dish4-name h1 a span {
+  background: #e4c590;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+  padding: 0 5px;
+  position: relative;
+}
+
+.dish4-price {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #e4c590;
+  font-size: 21px;
+}
+
+.decription4 a {
+  text-decoration: none;
+  color: white;
+}
+/* Container3 */
+.container-3 {
+  background-color: #171819;
+  position: relative;
+  top: 370px;
+  padding-bottom: 60px;
+  font-family: forum, cursive;
+  height: 1200px;
+  max-width: 100%;
+}
+.menu-box-3 {
+  padding: 0px 15px;
+  width: auto;
+  height: 625px;
+}
+.subtitle-box-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 45px;
+  height: 120px;
+}
+.subtitle3 {
+  color: #e4c590;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  padding: 0px 0px 10px;
+}
+.icon3 {
+  padding: 0px 0px 15px;
+}
+.name-div3 h2 {
+  position: relative;
+  color: white;
+  font-family: forum, cursive;
+  font-size: 44px;
+  font-weight: 100;
+  margin-bottom: 0;
+  top: -35px;
+}
+.main-menu-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+}
+.main-dish-top {
+  display: flex;
+}
+/* main 1 */
+.main-dish1 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish1-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish1 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish1 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish1 {
+  color: #e4c590;
+  font-size: 20px;
+}
+/* main2 */
+.main-dish2 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish2-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish2 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish2 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish2 {
+  color: #e4c590;
+  font-size: 20px;
+}
+/* main3 */
+.main-dish3 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish3-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish3 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish3 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish3 {
+  color: #e4c590;
+  font-size: 20px;
+}
+/* main 4 */
+.main-dish4 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish4-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish4 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish4 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish4 {
+  color: #e4c590;
+  font-size: 20px;
+}
+.main-dish-bottom {
+  display: flex;
+}
+/* main 5 */
+
+.main-dish5 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish5-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish5 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish5 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish5 {
+  color: #e4c590;
+  font-size: 20px;
+}
+/* main 6 */
+.main-dish6 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish6-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish6 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish6 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish6 {
+  color: #e4c590;
+  font-size: 20px;
+}
+/* main 7 */
+.main-dish7 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish7-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish7 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish7 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish7 {
+  color: #e4c590;
+  font-size: 20px;
+}
+/* main 8 */
+.main-dish8 {
+  padding: 0px 15px;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 302px;
+  height: 494px;
+}
+.main-dish8-img a img {
+  width: 100%;
+  height: 354px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-dish8 h4 a {
+  margin: 0px 0px 10px;
+  font-family: "Forum", cursive;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.main-subtitle-dish8 {
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px 0px 15px;
+}
+.main-price-dish8 {
+  color: #e4c590;
+  font-size: 20px;
+}
+
+/* container-4 */
+
+.container-4 {
+  padding: 0px 0px 60px;
+  position: relative;
+  top: 370px;
+  background-color: #171819;
+}
+.chef-selection {
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.chef-selection-box {
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  background-color: #0e0d0c;
+}
+.cont-4-img img {
+  display: block;
+  position: relative;
+  width: 555px;
+  height: 570px;
+  border-radius: 20px;
+  border-bottom-right-radius: none;
+}
+.subtitle-box-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 0px 45px;
+  height: 120px;
+}
+.subtitle4 {
+  color: #e4c590;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  padding: 0px 0px 10px;
+}
+.icon4 {
+  padding: 0px 0px 15px;
+}
+.name-div4 h2 {
+  position: relative;
+  color: white;
+  font-family: forum, cursive;
+  font-size: 44px;
+  font-weight: 100;
+  margin-bottom: 0;
+  top: -35px;
+}
+.cont-4-subtitle {
+  width: 480px;
+  padding: 140px 20px 140px 130px;
+}
+.text {
+  color: white;
+}
+.price {
+  padding-top: 30px;
+}
+.price-old {
+  color: #a7a7a7;
+  font-size: 15px;
+}
+.price-new {
+  color: #e4c590;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.icon-cont-4 {
+  position: relative;
+  right: 60px;
+  top: 50px;
+}
+/* container-5 */
+.container-5 {
+  background-color: #171819;
+  position: relative;
+  top: 370px;
+  padding-bottom: 60px;
+  font-family: forum, cursive;
+  height: 650px;
+  max-width: 100%;
+}
+.menu-box-5 {
+  padding: 0px 15px;
+  width: auto;
+  height: 625px;
+}
+.subtitle-box-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 45px;
+  height: 120px;
+}
+.subtitle5 {
+  color: #e4c590;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  padding: 0px 0px 10px;
+}
+.icon5 {
+  padding: 0px 0px 15px;
+}
+.name-div5 h2 {
+  position: relative;
+  color: white;
+  font-family: forum, cursive;
+  font-size: 44px;
+  font-weight: 100;
+  margin-bottom: 0;
+  top: -35px;
+}
+
+/* container-5-menu */
+.container-5-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  right: 50px;
+}
+.menu-5-left {
+  padding: 0px 15px;
+}
+.menu-5-right {
+  padding: 0px 0px 0px 15px;
+}
+/* dish-1 */
+.dish-1 {
+  display: flex;
+  padding: 10px 0px 0px 120px;
+  margin-bottom: 55px;
+  width: 450px;
+}
+.dish-1-subtitle {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+.dish-subtitle-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 15px;
+}
+.name-dish-1 a {
+  color: #fff;
+  font-size: 21px;
+  font-family: "Forum", sans-serif;
+  text-decoration: none;
+}
+.price-dish-1 {
+  color: #e4c590;
+  font-family: "forum", sans-serif;
+  font-size: 22px;
+}
+
+.text-dish-1 {
+  position: relative;
+  bottom: 25px;
+  font-family: "DM Sans", sans-serif;
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+/* container-6 */
+.container-6 {
+  position: relative;
+  top: 370px;
+  padding-bottom: 60px;
+  background-color: #171819;
+}
+.container-6-box {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  position: static;
+}
+.private-event {
+  display: flex;
+  margin: 0px 0px 40px;
+  padding: 0px 25px;
+  height: 481px;
+}
+.icon-box-6 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 102%;
+  bottom: 6px;
+}
+.content {
+  display: flex;
+  padding: 30px 25px 40px;
+  background-color: #0e0d0c;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name-box-6 {
+  color: #fff;
+  padding: 0px 0px 5px;
+  font-family: "forum", cursive;
+  font-size: 25px;
+}
+.info-box-6 {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 14px;
+  color: #a7a7a7;
+  padding-bottom: 15px;
+}
+.text-booking {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.booking-box-6 {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Dm sans", sans-serif;
+  margin: 0px 0px 5px;
+}
+.text-booking-number a {
+  color: #e4c590;
+  font-size: 20px;
+  font-family: "Dm Sans", sans-serif;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.button-box-6 a {
+  border: 1px solid #e4c590;
+  color: black;
+  padding: 11px 45px;
+  background-color: #e4c590;
+  font-size: 13px;
+  font-weight: 550;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.button-box-6 a {
+}
+
+.container-6-img {
+  display: flex;
+}
+.pic1 img {
+  padding-right: 10px;
+}
+
+/* container-7 */
+.container-7 {
+  position: relative;
+  top: 370px;
+  padding-bottom: 60px;
+  background-color: #171819;
+}
+.container-7-box {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  position: static;
+  flex-direction: row-reverse;
+}
+.private-event7 {
+  display: flex;
+  margin: 0px 0px 40px;
+  padding: 0px 10px;
+  height: 481px;
+}
+.icon-box-7 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 102%;
+  bottom: 6px;
+  left: 540px;
+}
+.content7 {
+  display: flex;
+  padding: 30px 25px 40px;
+  background-color: #0e0d0c;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name-box-7 {
+  color: #fff;
+  padding: 0px 0px 5px;
+  font-family: "forum", cursive;
+  font-size: 25px;
+}
+.info-box-7 {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 14px;
+  color: #a7a7a7;
+  padding-bottom: 15px;
+}
+.text-booking7 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.booking-box-7 {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Dm sans", sans-serif;
+  margin: 0px 0px 5px;
+}
+.text-booking-number7 a {
+  color: #e4c590;
+  font-size: 20px;
+  font-family: "Dm Sans", sans-serif;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.button-box-7 a {
+  border: 1px solid #e4c590;
+  color: black;
+  padding: 11px 45px;
+  background-color: #e4c590;
+  font-size: 13px;
+  font-weight: 550;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container-7-img {
+  display: flex;
+}
+.pic3 img {
+  padding-right: 10px;
+}
+
+/* container-8 */
+.container7 {
+  background: #171819;
+  bottom: 0;
+  height: 900px;
+  left: 0;
+  right: 0;
+  position: relative;
+  top: 370px;
+}
+
+.container7_inner {
+  background-color: #0e0d0c;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: -270px;
+  height: 123%;
+}
+
+.container7_left {
+  background-color: #0e0d0c;
+  padding: 75px 60px 60px;
+  width: 70%;
+}
+
+.container7_left_top {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "DM sans", sans-serif;
+}
+
+.container7_left_top h2 {
+  font-size: 60px;
+  font-family: "Forum", cursive;
+  line-height: 1.2em;
+  color: #fff;
+}
+.booking-request {
+  color: #fff;
+}
+
+.container7_left_top a {
+  color: #e4c590;
+}
+
+.form_group7 {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+
+.form_1 {
+  display: flex;
+}
+
+.form_1 .form_group7 {
+  width: 50%;
+}
+
+.form_2 {
+  display: flex;
+}
+
+.form_2 .form_group7 {
+  width: 33.3%;
+}
+
+.form_group7 input[type="text"],
+.form_group7 input[type="date"],
+.form_group7 input[type="time"],
+.form_group7 input[type="email"],
+.form_group7 textarea,
+.form_group7 select {
+  height: 56px;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  line-height: 34px;
+  font-weight: 400;
+  padding: 10px 20px;
+  background-color: #1a1b1c;
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.form_group7 input[type="text"]:focus,
+.form_group7 input[type="date"]:focus,
+.form_group7 input[type="time"]:focus,
+.form_group7 input[type="email"],
+.form_group7 textarea:focus,
+.form_group7 select:focus {
+  border-color: #e4c590;
+}
+
+::placeholder {
+  color: white;
+}
+
+input {
+  font-family: "DM sans", sans-serif;
+}
+
+.container7_right {
+  /* background: url("./imgMenu/container-6/background.jpg") repeat; */
+  padding: 75px 20px 55px;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  top: 5%;
+}
+
+.container7_right .heading {
+  font-size: 30px;
+  line-height: 1em;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.book_through_call {
+  color: #a7a7a7;
+}
+
+.container7_right .container6_middle {
+  margin: -10px 0px 20px 0px;
+}
+
+.container7_right li {
+  color: #a7a7a7;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+  font-family: "DM sans", sans-serif;
+}
+
+.container7_right strong {
+  color: white;
+  margin-bottom: 5px;
+}
