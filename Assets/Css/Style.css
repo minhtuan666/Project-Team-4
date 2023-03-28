@@ -1174,6 +1174,7 @@ animation-timing-function: linear;
   padding: 25px 217px;
   display: flex;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .timetable{
